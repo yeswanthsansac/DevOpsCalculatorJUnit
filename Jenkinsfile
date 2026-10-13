@@ -25,11 +25,6 @@ pipeline {
                 sh 'mvn -B clean test'
             }
         }
-        stage('dummy') {
-            steps {
-                sh 'exit 1'
-            }
-        }
     }
 
     post {
